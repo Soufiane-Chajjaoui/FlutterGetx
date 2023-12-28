@@ -42,7 +42,9 @@ class MyHomePage extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             // Navigate to Screen Two using GetX
-            Get.off(ScreenTwo());
+            // Get.toNamed("/ScreenTwo"); // this line if used routes in MyApp->build getPages
+            Get.offNamed("/ScreenTwo");
+            // Get.off(ScreenTwo());
             //Get.offAll(ScreenTwo()); this like tell stack to remove all previous widgets(context) and rest just ScreenTwo()
             //Get.to(ScreenTwo())
           },

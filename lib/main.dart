@@ -15,6 +15,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'GetX Navigation Example',
       home: MyHomePage(),
+      getPages:  [
+         GetPage(name: "/ScreenTwo" , page: () => ScreenTwo()) ,
+       ],
     );
   }
 }
